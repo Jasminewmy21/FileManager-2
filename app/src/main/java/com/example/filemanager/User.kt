@@ -2,7 +2,7 @@ package com.example.filemanager
 
 /**
  * @name: User
- * @date: 2020-05-18 10:28
+ * @date: 2020-06-18 10:28
  * @comment: 用户信息
  */
 class User {

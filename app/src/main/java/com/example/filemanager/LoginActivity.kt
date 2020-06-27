@@ -11,7 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 /**
- * A login screen that offers login via email/password.
+ * A login screen that offers login via username/password.
  */
 class LoginActivity : AppCompatActivity() {
     var dbHelper: DBHelper? = null

@@ -377,7 +377,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * 搜搜文件
+     * 搜索文件
      *
      * @param name
      */
