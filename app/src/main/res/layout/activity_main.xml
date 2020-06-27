@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.filemanager.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/TooBarTheme" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_copy"
+        app:backgroundTint="@color/colorNormal" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fam_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        app:layout_behavior="com.example.filemanager.FloatingActionMenuBehavior"
+        app:menu_colorNormal="@color/colorNormal"
+        app:menu_colorPressed="@color/colorPressed"
+        app:menu_colorRipple="@color/colorPressed"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/ic_add_black_24dp"
+        app:menu_shadowColor="@color/colorShadow"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="0dp"
+        app:menu_shadowYOffset="2dp"
+        app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_file_white"
+            app:fab_colorNormal="@color/colorNormal"
+            app:fab_colorPressed="@color/colorPressed"
+            app:fab_colorRipple="@color/colorPressed"
+            app:fab_label="@string/act_add_file"
+            app:fab_shadowColor="@color/colorShadow"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="0dp"
+            app:fab_shadowYOffset="2dp"
+            app:fab_showShadow="true"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_add_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_folder_white"
+            app:fab_colorNormal="@color/colorNormal"
+            app:fab_colorPressed="@color/colorPressed"
+            app:fab_colorRipple="@color/colorPressed"
+            app:fab_label="@string/act_add_folder"
+            app:fab_shadowColor="@color/colorShadow"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="0dp"
+            app:fab_shadowYOffset="2dp"
+            app:fab_showShadow="true"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>
